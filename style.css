@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  background: black;
+  overflow: hidden;
+  color: #00ff00;
+  font-family: Consolas, monospace;
+}
+
+#matrix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.08;
+}
+
+#startScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+#enterBtn {
+  font-size: 22px;
+  padding: 16px 30px;
+  border: 2px solid #00ff00;
+  border-radius: 10px;
+  background: black;
+  color: #00ff00;
+  cursor: pointer;
+}
+
+#mainContent {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+}
+
+.code {
+  background: rgba(0, 0, 0, 0.35);
+  padding: 20px;
+  border-radius: 12px;
+  white-space: pre-wrap;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.line-number {
+  color: rgba(255, 255, 255, 0.4);
+  display: inline-block;
+  width: 30px;
+}
+
+.keyword,
+.const-name,
+.key,
+.operator,
+.bracket,
+.outer {
+  color: #79c0ff;
+}
+
+.string {
+  color: #ffa657;
+}
+
+.link {
+  text-decoration: underline;
+}
